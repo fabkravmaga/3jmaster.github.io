@@ -6,21 +6,27 @@ shIterations over Perfection, yes?
 # Now I've got a Github account, what's next?
 
 Attendance Time! Mini Sprint!
-Customer Requirement: CRUD of attendee's names
-Strategy
 
-How can we do this securely?
-Data Confidentiality Integrity Availability
+Customer Requirement: CRUD of attendee's names
+
+# How can we do this securely?
+Strategy:
+
 * Crawl (Paper Check In) signature / thumbprint
 * Walk (Github check in code) SSH key / signed commits
 * Run (Web App with DB) API tokens / OAuth
 
+# Hands-on
+Steps:
 
 1. Go to https://github.com/DevSecOpsSG/git-workshop
 2. Sign in
 3. Click on `Fork` on the top right hand corner
 4. Click on your username to fork this repository
 5. Click on `Clone or download` (Choose Clone with SSH)
+
+# Hands-on
+
 6. Copy the URL that looks like this `git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git`
 7. Set your github username in your environment: `export YOUR_USERNAME = ???`
 8. Then run these commands on your machine:
@@ -35,6 +41,8 @@ Data Confidentiality Integrity Availability
   git push origin attendance
   ```
 
+# Hands-on
+
 9. Go to https://github.com/DevSecOpsSG/git-workshop again
 10. Create a Pull Request from the web console
 
@@ -42,7 +50,7 @@ I will merge the pull request after reviewing it.
 
 Merge Conflicts, duh. What do you expect? Life isnt a bed of roses. Fix it.
 
-# What have we just done?
+# Retrospective
 ## OPERATING IN GIT WORKFLOWS AND PRACTICES [OPS]
 Git operations has to be well defined for a approval. We want to move fast, we also want to move right.
 
