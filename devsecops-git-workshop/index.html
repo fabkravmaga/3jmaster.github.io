@@ -51,32 +51,36 @@
 </section>
 <section id="hands-on" class="slide level1">
 <h1>Hands-on</h1>
-<p>Steps:</p>
 <ol type="1">
-<li>Go to https://github.com/DevSecOpsSG/git-workshop</li>
+<li>Go to [https://github.com/DevSecOpsSG/git-workshop](https://github.com/DevSecOpsSG/git-workshop)</li>
 <li>Sign in</li>
-<li>Click on <code>Fork</code> on the top right hand corner</li>
-<li>Click on your username to fork this repository</li>
-<li>Click on <code>Clone or download</code> (Choose Clone with SSH)</li>
+<li>Click <code>Fork</code> on the top right hand corner</li>
+<li>Click your username to fork this repository</li>
+<li>Click <code>Clone or download</code></li>
+<li>Choose Clone with SSH</li>
 </ol>
 </section>
 <section id="hands-on-1" class="slide level1">
 <h1>Hands-on</h1>
 <ol start="6" type="1">
-<li>Copy the URL that looks like this <code>git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git</code></li>
-<li>Set your github username in your environment: <code>export YOUR_USERNAME = ???</code></li>
+<li>Copy the URL that looks like this: </li>
+  <pre><code>git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git</code></pre>
+<li>Set your github username in your environment: </li>
+  <pre><code>export YOUR_USERNAME = ???</code></pre>
 </ol>
 </section>
 <section id="hands-on-2" class="slide level1">
 <h1>Hands-on</h1>
 <p>Then run these commands on your machine:</p>
-<pre><code>git clone git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git
-  git checkout -b attendance
-  echo &quot;$YOUR_USERNAME&quot; &gt;&gt; $YOUR_USERNAME.is.here
-  git status
-  git add $YOUR_USERNAME.is.here
-  git commit -m '$YOUR_USERNAME is here.'
-  git push origin attendance</code></pre>
+<pre><code>
+git clone git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git
+git checkout -b attendance
+echo &quot;$YOUR_USERNAME&quot; &gt;&gt; $YOUR_USERNAME.is.here
+git status
+git add $YOUR_USERNAME.is.here
+git commit -m '$YOUR_USERNAME is here.'
+git push origin attendance
+</code></pre>
 </section>
 <section id="hands-on-3" class="slide level1">
 <h1>Hands-on</h1>
@@ -96,13 +100,27 @@
 <p>We are done? NO!</p>
 <p>Hold your horses!</p>
 </section>
+
 <section id="do-you-even-get-security-sec" class="slide level1">
 <h1>DO YOU EVEN GET SECURITY? [SEC]</h1>
-<p>Get the best git security tool ever, download this: <code>curl https://raw.githubusercontent.com/fabianlim1989/devsecops-git-workshop/master/example/setup.sh | sh</code></p>
-<p>Dude, really? You fell for it? Don't trust anyone. Don't just blindly execute scripts. <code>rm -rf /</code> anyone?</p>
-<p>Installing obfuscated scripts? what? Included in many instructions for set up, what if your dns is poisoned? what if you typed wrong? What if the script is nested?</p>
-<p>Git is a software afterall, how you use it... https://www.helpnetsecurity.com/2014/12/19/critical-git-flaw-allows-attackers-to-compromise-developers-machines/</p>
+<p>Get the best git security tool, download this: </p>
+  <pre><code>curl https://raw.githubusercontent.com/fabianlim1989/devsecops-git-workshop/master/example/setup.sh | sh</code></pre>
+</section>
+
+<section id="do-you-even-get-security-sec" class="slide level1">
+<h1>DO YOU EVEN GET SECURITY? [SEC]</h1>
+<p>Dude, really? You fell for it? Don't just blindly execute scripts. <code>rm -rf /</code> anyone?</p>
+https://media.giphy.com/media/6OWIl75ibpuFO/giphy.gif
+<p>Installing obfuscated scripts? What? Included in many instructions for set up, what if your dns is poisoned? what if you typed wrong? What if the script is nested?</p>
+</section>
+
+<section id="git-is-a-software-afterall" class="slide level1">
+<h1>Git is a software afterall, how you use it... </h1>
+<p>https://www.helpnetsecurity.com/2014/12/19/critical-git-flaw-allows-attackers-to-compromise-developers-machines/</p>
 <p>http://resources.infosecinstitute.com/security-best-practices-for-git-users/</p>
+</section>
+
+<section id="do-you-even-get-security-sec" class="slide level1">
 <p>Passwords Hunting is one of my hobbies - https://help.github.com/articles/searching-code/ https://help.github.com/articles/advanced-search/</p>
 <p>NEGATIVE Examples: https://github.com/search?p=1&amp;q=mongolabs+password&amp;ref=searchresults&amp;type=Code https://github.com/search?q=mongohq+password&amp;type=Code&amp;ref=searchresults</p>
 <p>Uber: http://arstechnica.com/security/2015/03/ubers-epic-db-blunder-is-hardly-an-exception-github-is-awash-in-passwords/</p>
@@ -111,6 +129,7 @@
 <p>.gitignore file is useful</p>
 <p>Hands-on for .gitignore!</p>
 </section>
+
 <section id="pros-cons-of-git" class="slide level1">
 <h1>Pros &amp; Cons of Git</h1>
 <p>Great for both developer and managers. History, version, metrics, visibilty, fun... Cons??? Who can think of any? I can't.</p>
