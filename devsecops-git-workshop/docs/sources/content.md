@@ -29,7 +29,10 @@ Steps:
 
 6. Copy the URL that looks like this `git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git`
 7. Set your github username in your environment: `export YOUR_USERNAME = ???`
-8. Then run these commands on your machine:
+
+# Hands-on
+
+Then run these commands on your machine:
 
   ```
   git clone git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git
