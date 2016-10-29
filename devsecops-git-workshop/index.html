@@ -90,21 +90,23 @@ git push origin attendance
 <ol start="9" type="1">
 <li>Go to https://github.com/DevSecOpsSG/git-workshop again</li>
 <li>Create a Pull Request from the web console</li>
-<li>I will merge the pull request after review.</li>
+<li>Project admin will merge the pull request after review</li>
 </ol>
 <p>Merge Conflicts? Duh. Life isn't a bed of roses. Resolve it.</p>
 </section>
 
 <section id="retrospective" class="slide level1" data-background-image="https://2.bp.blogspot.com/-feWSt7yeICo/UShJjBNFYZI/AAAAAAAABS0/4YjvpyUf4YA/s400/bbt_celebration-gif.gif">
 <h1>Retrospective</h1>
-<p>End-of-Sprint</p>
+<h2s>End-of-Sprint</h2>
 </section>
 
 <section id="git-workflows" class="slide level1">
 <h1>Git Workflows</h1>
-<p>What we did was generally used for open-source contribution</p>
-<p>Another workflow can be used for peer-review based code check-in</p>
-<p>Regardless of workflow, the process has to be defined for an organization to move fast, and move right.</p>
+<ul>
+<li>What we did was generally used for open-source contribution</li>
+<li>Another workflow can be used for peer-review based code check-in</li>
+<li>Regardless of workflow, the process has to be defined for an organization to move fast, and move securely</li>
+</ul>
 <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/">Link to comparions for workflows</a>
 </section>
 
@@ -112,8 +114,7 @@ git push origin attendance
 <h1>DO YOU EVEN GET SECURITY?</h1>
 <p>Get the best git security tool, download this: </p>
   <pre><code>
-    curl https://raw.githubusercontent.com/fabianlim1989/ \
-    devsecops-git-workshop/master/example/setup.sh | sh
+    curl https://raw.githubusercontent.com/DevSecOpsSG/git-workshop/master/example/setup.sh | sh
   </code></pre>
 </section>
 
@@ -126,24 +127,50 @@ git push origin attendance
 
 <section id="git-is-a-software-afterall" class="slide level1">
 <h1>Git is a software afterall, how you use it... </h1>
-<p>https://www.helpnetsecurity.com/2014/12/19/critical-git-flaw-allows-attackers-to-compromise-developers-machines/</p>
-<p>http://resources.infosecinstitute.com/security-best-practices-for-git-users/</p>
+<ul>
+<li>Do not used shared credentials, especially root
+<li>Enforce signing of commits
+<li>Do not check in secrets into source code - NO NOT EVEN DEVELOPMENT
+  <li>Train developers to use variables and substitutions
+<li>Use .gitignore to prevent accidents
+<li>Keep your code infrastructure secure (and away from public whenever possible)
+</ul>
+<a href="https://www.helpnetsecurity.com/2014/12/19/critical-git-flaw-allows-attackers-to-compromise-developers-machines/">Git Flaw</a>
+<a href="http://resources.infosecinstitute.com/security-best-practices-for-git-users/">Security Best Practices</a>
 </section>
 
 <section id="password-hunting" class="slide level1">
-<p>Passwords Hunting is one of my hobbies!</p>
-<p>https://help.github.com/articles/searching-code/ https://help.github.com/articles/advanced-search/</p>
-<p>NEGATIVE Examples: https://github.com/search?p=1&amp;q=mongolabs+password&amp;ref=searchresults&amp;type=Code https://github.com/search?q=mongohq+password&amp;type=Code&amp;ref=searchresults</p>
-<p>Uber: http://arstechnica.com/security/2015/03/ubers-epic-db-blunder-is-hardly-an-exception-github-is-awash-in-passwords/</p>
-<p>History password hunting might be harder but not impossible.</p>
-<p>Purge Git history: https://help.github.com/articles/remove-sensitive-data/ Revoke secret because history and use secret managers moving forward.</p>
-<p>.gitignore file is useful</p>
-<p>Hands-on for .gitignore!</p>
+<h1>Passwords Hunting is one of my hobbies!</h1>
+<h2>NEGATIVE Examples: </h2>
+<p><a href="http://arstechnica.com/security/2015/03/ubers-epic-db-blunder-is-hardly-an-exception-github-is-awash-in-passwords/">Uber Blunder</a></p>
+<p><a href="https://github.com/search?p=1&amp;q=mongolabs+password&amp;ref=searchresults&amp;type=Code">Search for MongoLabs Passwords</a></p>
+<p><a href="https://github.com/search?q=mongohq+password&amp;type=Code&amp;ref=searchresults">Search for MongoHQ Passwords</a></p>
+<p>History password hunting might be harder but not impossible</p>
+<p><a href="https://help.github.com/articles/remove-sensitive-data/">How to Purge Git History</a>  and revoke secret and always use a secret management service moving forward</p>
+<p><a href="https://help.github.com/articles/searching-code/">Searching Code</a></p>
+<p><a href="https://help.github.com/articles/advanced-search/">Advanced Searching</a></p>
 </section>
 
 <section id="pros-cons-of-git" class="slide level1">
 <h1>Pros &amp; Cons of Git</h1>
-<p>Great for both developer and managers. History, version, metrics, visibilty, fun... Cons??? Who can think of any? I can't.</p>
+<table>
+  <thead>
+  <tr>
+    <td>Pros</td><td>Cons</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>adf</td>
+    <td>Cons??? Anyone? I can't.</td>
+  </tr>
+  <tr>
+    <td row='2'>fdsafa</td>
+  </tr>
+  </tbody>
+</table>
+<p>Great for both developer and managers.
+  History, version, metrics, visibilty, fun...
 <p>Basics you need to know as developer to be successful, and why</p>
 <p>We are done? NO!</p>
 <p>Hold your horses!</p>
