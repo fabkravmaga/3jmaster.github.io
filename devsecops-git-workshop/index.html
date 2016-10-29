@@ -49,9 +49,32 @@
 <li>Run (Web App with DB) API tokens / OAuth</li>
 </ul>
 </section>
-<section id="walk-github-check-in-code-ssh-key-signed-commits" class="slide level1">
-<h1>Walk (Github check in code) SSH key / signed commits</h1>
-<p><a href="./hands-on-1.md">Instructions here: ./hands-on-1.md</a></p>
+<section id="hands-on" class="slide level1">
+<h1>Hands-on</h1>
+<p>Steps:</p>
+<ol type="1">
+<li>Go to https://github.com/DevSecOpsSG/git-workshop</li>
+<li>Sign in</li>
+<li>Click on <code>Fork</code> on the top right hand corner</li>
+<li>Click on your username to fork this repository</li>
+<li>Click on <code>Clone or download</code> (Choose Clone with SSH)</li>
+</ol>
+</section>
+<section id="hands-on-1" class="slide level1">
+<h1>Hands-on</h1>
+<ol start="6" type="1">
+<li>Copy the URL that looks like this <code>git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git</code></li>
+<li>Set your github username in your environment: <code>export YOUR_USERNAME = ???</code></li>
+<li>Then run these commands on your machine:</li>
+</ol>
+<p><code>git clone git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git   git checkout -b attendance   echo &quot;$YOUR_USERNAME&quot; &gt;&gt; $YOUR_USERNAME.is.here   git status   git add $YOUR_USERNAME.is.here   git commit -m '$YOUR_USERNAME is here.'   git push origin attendance</code></p>
+</section>
+<section id="hands-on-2" class="slide level1">
+<h1>Hands-on</h1>
+<ol start="9" type="1">
+<li>Go to https://github.com/DevSecOpsSG/git-workshop again</li>
+<li>Create a Pull Request from the web console</li>
+</ol>
 <p>I will merge the pull request after reviewing it.</p>
 <p>Merge Conflicts, duh. What do you expect? Life isnt a bed of roses. Fix it.</p>
 </section>
