@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
   <link rel="stylesheet" href="overrides.css"/>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
   <!-- If the query includes 'print-pdf', include the PDF print sheet -->
   <script>
     if( window.location.search.match( /print-pdf/gi ) ) {
@@ -37,19 +37,40 @@
 </section>
 <section id="now-ive-got-a-github-account-whats-next" class="slide level1">
 <h1>Now I've got a Github account, what's next?</h1>
-<p>Attendance Time! Mini Sprint! Customer Requirement: CRUD of attendee's names Strategy</p>
-<p>How can we do this securely? Data Confidentiality Integrity Availability * Crawl (Paper Check In) signature / thumbprint * Walk (Github check in code) SSH key / signed commits * Run (Web App with DB) API tokens / OAuth</p>
+<p>Attendance Time! Mini Sprint!</p>
+<p>Customer Requirement: CRUD of attendee's names</p>
+</section>
+<section id="how-can-we-do-this-securely" class="slide level1">
+<h1>How can we do this securely?</h1>
+<p>Strategy:</p>
+<ul>
+<li>Crawl (Paper Check In) signature / thumbprint</li>
+<li>Walk (Github check in code) SSH key / signed commits</li>
+<li>Run (Web App with DB) API tokens / OAuth</li>
+</ul>
+</section>
+<section id="hands-on" class="slide level1">
+<h1>Hands-on</h1>
+<p>Steps:</p>
 <ol type="1">
 <li>Go to https://github.com/DevSecOpsSG/git-workshop</li>
 <li>Sign in</li>
 <li>Click on <code>Fork</code> on the top right hand corner</li>
 <li>Click on your username to fork this repository</li>
 <li>Click on <code>Clone or download</code> (Choose Clone with SSH)</li>
+</ol>
+</section>
+<section id="hands-on-1" class="slide level1">
+<h1>Hands-on</h1>
+<ol start="6" type="1">
 <li>Copy the URL that looks like this <code>git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git</code></li>
 <li>Set your github username in your environment: <code>export YOUR_USERNAME = ???</code></li>
 <li>Then run these commands on your machine:</li>
 </ol>
 <p><code>git clone git@github.com:$YOUR_USERNAME/devsecops-git-workshop.git   git checkout -b attendance   echo &quot;$YOUR_USERNAME&quot; &gt;&gt; $YOUR_USERNAME.is.here   git status   git add $YOUR_USERNAME.is.here   git commit -m '$YOUR_USERNAME is here.'   git push origin attendance</code></p>
+</section>
+<section id="hands-on-2" class="slide level1">
+<h1>Hands-on</h1>
 <ol start="9" type="1">
 <li>Go to https://github.com/DevSecOpsSG/git-workshop again</li>
 <li>Create a Pull Request from the web console</li>
@@ -57,8 +78,8 @@
 <p>I will merge the pull request after reviewing it.</p>
 <p>Merge Conflicts, duh. What do you expect? Life isnt a bed of roses. Fix it.</p>
 </section>
-<section id="what-have-we-just-done" class="slide level1">
-<h1>What have we just done?</h1>
+<section id="retrospective" class="slide level1">
+<h1>Retrospective</h1>
 <h2 id="operating-in-git-workflows-and-practices-ops">OPERATING IN GIT WORKFLOWS AND PRACTICES [OPS]</h2>
 <p>Git operations has to be well defined for a approval. We want to move fast, we also want to move right.</p>
 <p>https://www.atlassian.com/git/tutorials/comparing-workflows/</p>
@@ -108,7 +129,7 @@
         center: false,                       // Vertical centering of slides
         maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
         slideNumber: false,                // Display the page number of the current slide
-        theme: 'white', // available themes are in /css/theme
+        theme: 'black', // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
         // Optional libraries used to extend on reveal.js

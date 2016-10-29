@@ -7,7 +7,7 @@ done
 # do
 #   git add $f
 # done
-git add .
-git add ../
+mv content.html ../index.html
+git add ../index.html
 git commit -m 'generate and push.'
 git push
