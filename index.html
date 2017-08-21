@@ -5,12 +5,18 @@
   <script>
     var d= new Date();
     alert(d);
-//     var start_date=
-//     var end_date=
-//     var days_to_complete=
-//     var present_now=now();
-//     var ld_value=3300000;
-//     var current_ld_value=
+    var start_date = new Date(2016, 10, 4, 08, 00, 00, 00);
+    document.getElementById("start_date").innerHTML = d.toUTCString();
+    var end_date = new Date(2020, 10, 4, 08, 00, 00, 00);
+    var days_to_complete=
+    var present_now=now();
+    var total_ld_value=3300000;
+    var current_ld_value=
   </script>
+  <p id="start_date"></p>
+  <p id="end_date"></p>
+  <p id="days_to_completion"></p>
+  <p id="current_ld_value"></p>
+
   </body>
 </html>
