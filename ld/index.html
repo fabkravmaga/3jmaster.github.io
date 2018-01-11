@@ -9,6 +9,12 @@
   <h2>Time Left (MS)</h2>
   <p id="remaining_duration_ms"></p>
     
+  <h2>Time Left (Days)</h2>
+  <p id="remaining_duration_days"></p>
+    
+  <h2>Time Left (Est. Months, for 30 day in a month)</h2>
+  <p id="remaining_duration_months"></p>
+    
   <h2>Time Served (MS)</h2>
   <p id="elapsed_duration_ms"></p>
     
@@ -34,6 +40,13 @@
    
     var remaining_duration_ms = Date.parse(end_date) - Date.now();
     document.getElementById("remaining_duration_ms").innerHTML = remaining_duration_ms;
+    
+    var remaining_duration_days = (remaining_duration_ms / 86400000)
+    document.getElementById("remaining_duration_days").innerHTML = remaining_duration_days;
+    
+    var remaining_duration_months = (remaining_duration_days / 30)
+    document.getElementById("remaining_duration_months").innerHTML = remaining_duration_months;
+    
     var elapsed_duration_ms =  Date.now() - Date.parse(start_date);    
     document.getElementById("elapsed_duration_ms").innerHTML = elapsed_duration_ms;
     
