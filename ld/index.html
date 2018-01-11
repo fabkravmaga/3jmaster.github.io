@@ -1,0 +1,41 @@
+<html>
+  <body>
+  <p>Start Date</p>
+  <p id="start_date"></p>
+  <p>End Date</p>
+  <p id="end_date"></p>
+  <p>Countdown Time in MS</p>
+  <p id="remaining_duration_ms"></p>
+  <p>Elapsed Time in MS</p>
+  <p id="elapsed_duration_ms"></p>
+  <p>Served LD Value in SGD</p>
+  <p id="paid_ld_value"></p>
+  <p>Current LD Value in SGD</p>
+  <p id="current_ld_value"></p>
+  <script>
+    //var d= new Date();
+    //alert(d);
+    var start_date = new Date(2016, 09, 4, 08, 00, 00, 00);
+    document.getElementById("start_date").innerHTML = start_date.toDateString();
+    
+    var end_date = new Date(2020, 09, 4, 08, 00, 00, 00);
+    document.getElementById("end_date").innerHTML = end_date.toDateString();
+    
+    var total_duration_ms = Date.parse(end_date) - Date.parse(start_date);
+   
+    var remaining_duration_ms = Date.parse(end_date) - Date.now();
+    document.getElementById("remaining_duration_ms").innerHTML = remaining_duration_ms;
+    var elapsed_duration_ms =  Date.now() - Date.parse(start_date);    
+    document.getElementById("elapsed_duration_ms").innerHTML = elapsed_duration_ms;
+    
+    var total_ld_value = 330000;
+
+    var paid_ld_value = total_ld_value * (elapsed_duration_ms)/(total_duration_ms);    
+    document.getElementById("paid_ld_value").innerHTML = paid_ld_value;
+    var current_ld_value = total_ld_value * (remaining_duration_ms)/(total_duration_ms);
+    document.getElementById("current_ld_value").innerHTML = current_ld_value;
+    
+  </script>
+
+  </body>
+</html>
