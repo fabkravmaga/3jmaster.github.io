@@ -1,5 +1,8 @@
 <html>
   <body>
+
+  <p>*Page refreshes every few seconds to update*<p>
+  <br/>    
   <h2>Start Date of Contract</h2>
   <p id="start_date"></p>
     
@@ -23,13 +26,13 @@
     
   <h2>Estimated Current LD (SGD)</h2>
   <p id="current_ld_value"></p>
-    
-  <br/>
-  <p>*refresh page to update*<p>
   
   <script>
-    //var d= new Date();
-    //alert(d);
+
+    setTimeout(function(){
+      window.location.reload(1);
+    }, 5000);
+    
     var start_date = new Date(2016, 09, 4, 08, 00, 00, 00);
     document.getElementById("start_date").innerHTML = start_date.toDateString();
     
